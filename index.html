@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>M Aswin Kishore</title>
     <link href="./index.css" rel="stylesheet" />
+    <link href="./assets/mak2.png" rel="icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,21 +14,27 @@
       rel="stylesheet"
     />
     <script src="./index.js"></script>
+    <script src="./assets/stacks.js"></script>
   </head>
   <body>
+    <!-- NAV BAR -->
     <header>
       <nav class="navbar">
         <div class="navbar-title">M Aswin Kishore</div>
-        <a href="#" class="navbar-menu" onclick="menuEventHandler()">
+        <a href="#" class="navbar-menu" id="navbar-menu">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </a>
         <div class="navbar-links">
           <ul>
-            <li><a href="/">About Me</a></li>
-            <li><a href="/">NEO-GCamp Projects</a></li>
-            <li><a href="/">Personal Projects</a></li>
+            <li><a class="active" href="/">About Me</a></li>
+            <li>
+              <a href="./projects/index.html">Projects</a>
+            </li>
+            <li>
+              <a href="./blogs/index.html">Blogs</a>
+            </li>
             <li>
               <a href="mailto:mak26.work@gmail.com?subject=Portfolio">
                 <button class="contact-me-button">Contact Me</button>
@@ -37,5 +44,29 @@
         </div>
       </nav>
     </header>
+    <!-- /NAV BAR -->
+
+    <div class="profile-info">
+      <ul>
+        <li>
+          <p>
+            Hey there I am
+            <span> Aswin </span>
+          </p>
+        </li>
+      </ul>
+      <img
+        class="profile-image"
+        src="https://media-exp1.licdn.com/dms/image/C4D03AQEeHs5_a00Yhw/profile-displayphoto-shrink_800_800/0/1628259483601?e=1633564800&v=beta&t=S5Uq9xnWrK33eh8hhkUwDcqCBaOY2LVIQt5O-u5EGq0"
+        alt="profile-image"
+      />
+    </div>
+
+    <!-- STACKS -->
+    <div class="stacks">
+      <h2>My Tools & Technologies</h2>
+      <ul id="stacks-data"></ul>
+    </div>
+    <!-- /STACKS -->
   </body>
 </html>
