@@ -1,6 +1,7 @@
 :root {
   font-family: Poppins;
   --primary-color: #0fce72;
+  --primary-color-dark: #189458;
   --secondary-color: #1ba4ca;
   --nav-color: #212529;
   --font-color: white;
@@ -30,6 +31,7 @@ hr {
   border-radius: 10px;
 }
 
+/* NAVBAR CSSS: START */
 .navbar {
   display: flex;
   padding: 5px 3%;
@@ -69,6 +71,10 @@ hr {
 }
 
 .navbar-links li a:hover {
+  color: var(--primary-color-dark);
+}
+
+.navbar-links li a.active {
   color: var(--secondary-color);
 }
 
@@ -137,14 +143,9 @@ hr {
     width: 100%;
   }
 
-  .contact-me-button {
-    color: var(--primary-color);
-    background-color: var(--nav-color);
-    border: none;
-    border-radius: 0px;
-  }
-
   .navbar-links.active {
     display: flex;
   }
 }
+
+/* NAVBAR CSSS: END */
