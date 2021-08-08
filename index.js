@@ -12,6 +12,14 @@ const stacksHandler = () => {
       name: "Node JS",
     },
     {
+      icon: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+      name: "React JS",
+    },
+    {
+      icon: "https://user-images.githubusercontent.com/10379601/29446482-04f7036a-841f-11e7-9872-91d1fc2ea683.png",
+      name: "Puppeteer",
+    },
+    {
       icon: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
       name: "HTML",
     },
@@ -54,13 +62,58 @@ const stacksHandler = () => {
     imageElement.src = `${e.icon}`;
     imageElement.alt = `${e.name}`;
 
+    const subTitle = document.createElement("p");
+    subTitle.innerText = `${e.name}`;
+
     const listItem = document.createElement("li");
     listItem.appendChild(imageElement);
+    listItem.appendChild(subTitle);
 
     document.getElementById("stacks-data").appendChild(listItem);
   });
 };
 
+const skillsHandler = () => {
+  const skills = [
+    {
+      icon: "https://image.flaticon.com/icons/png/512/839/839608.png",
+      name: "Organization",
+    },
+    {
+      icon: "https://image.flaticon.com/icons/png/512/2139/2139551.png",
+      name: "Management",
+    },
+    {
+      icon: "https://image.flaticon.com/icons/png/512/2103/2103751.png",
+      name: "Automation",
+    },
+    {
+      icon: "https://image.flaticon.com/icons/png/512/1150/1150626.png",
+      name: "Web Scraping",
+    },
+    {
+      icon: "https://image.flaticon.com/icons/png/512/860/860472.png",
+      name: "Leadership",
+    },
+  ];
+
+  skills.forEach((e) => {
+    const imageElement = document.createElement("img");
+    imageElement.src = `${e.icon}`;
+    imageElement.alt = `${e.name}`;
+
+    const subTitle = document.createElement("p");
+    subTitle.innerText = `${e.name}`;
+
+    const listItem = document.createElement("li");
+    listItem.appendChild(imageElement);
+    listItem.appendChild(subTitle);
+
+    document.getElementById("skills-data").appendChild(listItem);
+  });
+};
+
 window.onload = () => {
   stacksHandler();
+  skillsHandler();
 };

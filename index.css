@@ -1,5 +1,6 @@
-@import "./components/navbar.css";
-@import "./components/stacks.css";
+@import "./styles/navbar.css";
+@import "./styles/stacks.css";
+@import "./styles/about-me.css";
 
 :root {
   font-family: Poppins;
@@ -7,7 +8,9 @@
   --primary-color-dark: #189458;
   --secondary-color: #1ba4ca;
   --nav-color: #212529;
+  --nav-color-dark: #18191a;
   --font-color: white;
+  --off-white-color: rgb(245, 245, 245);
 }
 
 body {
@@ -34,11 +37,15 @@ hr {
   border-radius: 10px;
 }
 
+b {
+  color: var(--primary-color-dark);
+}
+
 .profile-info {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 0px 50px;
+  padding: 50px 50px;
 }
 
 .profile-image {
