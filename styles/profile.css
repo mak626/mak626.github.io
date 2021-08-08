@@ -46,7 +46,7 @@
     color: var(--primary-color);
   }
   100% {
-    content: "Full Stack Web Developer";
+    content: "Web Developer";
     color: var(--secondary-color);
   }
 }
