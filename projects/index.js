@@ -187,7 +187,7 @@ const neo_g_ProjectsHandler = () => {
       stacks: "Github",
       description: [`Hosted all projects in github`],
       stack_description: [`Used git, github desktop`],
-      github: "(https://github.com/mak626/project-router",
+      github: "https://github.com/mak626/project-router",
       web: "./",
     },
     {
