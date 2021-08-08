@@ -1,8 +1,12 @@
 .stacks {
   padding: 20px;
 }
+
 .stacks ul {
   padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .stacks ul li {

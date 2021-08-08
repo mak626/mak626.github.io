@@ -2,6 +2,7 @@ header {
   padding: 0px;
   margin: 0px;
 }
+
 .navbar {
   display: flex;
   padding: 5px 0px;
@@ -106,8 +107,9 @@ header {
   }
 
   .navbar-links ul {
-    padding: 20px 0px;
-    margin: 0px 0px;
+    padding: 20px;
+    margin: 0px;
+    width: 100%;
     background-color: var(--nav-color-dark);
   }
 
@@ -115,11 +117,13 @@ header {
     padding: 5px 0px;
     text-align: center;
     width: 100%;
+    margin: 0px;
   }
 
   .navbar-links.active {
     display: flex;
     padding: 0px;
     margin: 0px;
+    width: 100%;
   }
 }
