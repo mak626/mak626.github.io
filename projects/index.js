@@ -3,6 +3,110 @@ const menuEventHandler = () => {
   navBarLinks.classList.toggle("active");
 };
 
+/**
+ * @param {Object[]} project
+ * @param {string} ulID
+ */
+const projectParser = (project, ulID) => {
+  const titleElement = document.createElement("h3");
+  titleElement.innerText = project.title;
+
+  const stacksElement = document.createElement("span");
+  stacksElement.innerHTML = project.stacks;
+
+  titleElement.appendChild(stacksElement);
+
+  const descriptionElement = document.createElement("p");
+  descriptionElement.classList.add("info");
+  descriptionElement.innerText = project.description.join(" ");
+
+  const stackDescriptionElement = document.createElement("p");
+  stackDescriptionElement.classList.add("info");
+  stackDescriptionElement.innerText = project.stack_description.join(" ");
+
+  const linksElement = document.createElement("ul");
+  linksElement.classList.add("links");
+
+  if (project.github) {
+    const listItem = document.createElement("li");
+    const anchorItem = document.createElement("a");
+    anchorItem.href = project.github;
+    anchorItem.target = "_blank";
+    anchorItem.classList.add("github");
+
+    const divItem = document.createElement("div");
+    divItem.innerText = "Github";
+    divItem.classList.add("media__link");
+    divItem.classList.add("github");
+
+    const imgItem = document.createElement("img");
+    imgItem.src = "https://image.flaticon.com/icons/png/512/25/25231.png";
+
+    divItem.appendChild(imgItem);
+    anchorItem.appendChild(divItem);
+    listItem.appendChild(anchorItem);
+    linksElement.appendChild(listItem);
+  }
+
+  if (project.web) {
+    const listItem = document.createElement("li");
+    const anchorItem = document.createElement("a");
+    anchorItem.href = project.web;
+    anchorItem.target = "_blank";
+    anchorItem.classList.add("github");
+
+    const divItem = document.createElement("div");
+    divItem.innerText = "Web";
+    divItem.classList.add("media__link");
+    divItem.classList.add("github");
+
+    const imgItem = document.createElement("img");
+    imgItem.src = "https://www.svgrepo.com/show/295345/internet.svg";
+
+    divItem.appendChild(imgItem);
+    anchorItem.appendChild(divItem);
+    listItem.appendChild(anchorItem);
+    linksElement.appendChild(listItem);
+  }
+
+  if (project.playstore) {
+    const listItem = document.createElement("li");
+    const anchorItem = document.createElement("a");
+    anchorItem.href = project.playstore;
+    anchorItem.target = "_blank";
+    anchorItem.classList.add("github");
+
+    const divItem = document.createElement("div");
+    divItem.innerText = "Playstore";
+    divItem.classList.add("media__link");
+    divItem.classList.add("github");
+
+    const imgItem = document.createElement("img");
+    imgItem.src =
+      "https://iconape.com/wp-content/files/fa/64777/png/google-play-store.png";
+
+    divItem.appendChild(imgItem);
+    anchorItem.appendChild(divItem);
+    listItem.appendChild(anchorItem);
+    linksElement.appendChild(listItem);
+  }
+
+  const parentDiv = document.createElement("div");
+  parentDiv.classList.add("project");
+  parentDiv.appendChild(titleElement);
+  parentDiv.appendChild(stacksElement);
+  parentDiv.appendChild(descriptionElement);
+  parentDiv.appendChild(stackDescriptionElement);
+
+  if (project.github || project.web || project.playstore)
+    parentDiv.appendChild(linksElement);
+
+  const listItem = document.createElement("li");
+  listItem.appendChild(parentDiv);
+
+  document.getElementById(ulID).appendChild(listItem);
+};
+
 const personalProjectsHandler = () => {
   const projects = [
     {
@@ -57,106 +161,84 @@ const personalProjectsHandler = () => {
     },
   ];
 
-  projects.forEach((e) => {
-    const titleElement = document.createElement("h3");
-    titleElement.innerText = e.title;
+  projects.forEach((e) => projectParser(e, "personal__projects"));
+};
 
-    const stacksElement = document.createElement("span");
-    stacksElement.innerHTML = e.stacks;
+const neo_g_ProjectsHandler = () => {
+  const projects = [
+    {
+      title: "MARK 1 : Simple Quiz-1",
+      stacks: "NodeJS",
+      description: [`A NodeJS CLI for quiz with stored Score Board`],
+      stack_description: [`Used NodeJS, chalk and read-sync libraries`],
+      github: "https://github.com/mak626/simple-quiz-1",
+      web: "https://replit.com/@mak626/mark1",
+    },
+    {
+      title: "MARK 2 : Simple Quiz-2",
+      stacks: "NodeJS",
+      description: [`A NodeJS CLI for quiz with stored Score Board`],
+      stack_description: [`Used NodeJS, chalk and read-sync libraries`],
+      github: "https://github.com/mak626/simple-quiz-2",
+      web: "https://replit.com/@mak626/mark2",
+    },
+    {
+      title: "MARK 3 : Hosting",
+      stacks: "Github",
+      description: [`Hosted all projects in github`],
+      stack_description: [`Used git, github desktop`],
+      github: "(https://github.com/mak626/project-router",
+      web: "./",
+    },
+    {
+      title: "MARK 4 : PortFolio",
+      stacks: "NodeJS",
+      description: [`A NodeJS CLI for quiz with stored Score Board`],
+      stack_description: [`Used NodeJS, chalk and read-sync libraries`],
+      github: "https://github.com/mak626/portfolio",
+      web: "../",
+    },
+    {
+      title: "MARK 5 : PortFolio Blogs",
+      stacks: "NodeJS",
+      description: [`A NodeJS CLI for quiz with stored Score Board`],
+      stack_description: [`Used NodeJS, chalk and read-sync libraries`],
+      github: "https://github.com/mak626/portfolio",
+      web: "../blogs",
+    },
+    {
+      title: "MARK 6 : Banana Translator",
+      stacks: "HTML | CSS | JS",
+      description: [`Translates the given text to a random minion styled text`],
+      stack_description: [`Used HTML, CSS, JS and API Calls`],
+      github: "https://github.com/mak626/banana-text-translator",
+      web: "https://mak626.github.io/banana-text-translator/",
+    },
+    {
+      title: "MARK 7 : Ferb Translator",
+      stacks: "HTML | CSS | JS",
+      description: [`Translates the given text to a random ferb styled text`],
+      stack_description: [`Used HTML, CSS, JS and API Calls`],
+      github: "https://github.com/mak626/ferb-text-translator",
+      web: "https://mak626.github.io/ferb-text-translator/",
+    },
+    {
+      title: "MARK 8 : Emoji Interpreter",
+      stacks: "ReactJS",
+      description: [
+        `Interprets meaning of given emoji.`,
+        `Supports over 600+ emojis.`,
+      ],
+      stack_description: [`Used React JS and Web Scraping to extract emojis`],
+      github: "https://github.com/mak626/emoji-interpreter",
+      web: "https://2mm8w.csb.app/",
+    },
+  ];
 
-    titleElement.appendChild(stacksElement);
-
-    const descriptionElement = document.createElement("p");
-    descriptionElement.classList.add("info");
-    descriptionElement.innerText = e.description.join(" ");
-
-    const stackDescriptionElement = document.createElement("p");
-    stackDescriptionElement.classList.add("info");
-    stackDescriptionElement.innerText = e.stack_description.join(" ");
-
-    const linksElement = document.createElement("ul");
-    linksElement.classList.add("links");
-
-    if (e.github) {
-      const listItem = document.createElement("li");
-      const anchorItem = document.createElement("a");
-      anchorItem.href = e.github;
-      anchorItem.target = "_blank";
-      anchorItem.classList.add("github");
-
-      const divItem = document.createElement("div");
-      divItem.innerText = "Github";
-      divItem.classList.add("media__link");
-      divItem.classList.add("github");
-
-      const imgItem = document.createElement("img");
-      imgItem.src = "https://image.flaticon.com/icons/png/512/25/25231.png";
-
-      divItem.appendChild(imgItem);
-      anchorItem.appendChild(divItem);
-      listItem.appendChild(anchorItem);
-      linksElement.appendChild(listItem);
-    }
-
-    if (e.web) {
-      const listItem = document.createElement("li");
-      const anchorItem = document.createElement("a");
-      anchorItem.href = e.web;
-      anchorItem.target = "_blank";
-      anchorItem.classList.add("github");
-
-      const divItem = document.createElement("div");
-      divItem.innerText = "Web";
-      divItem.classList.add("media__link");
-      divItem.classList.add("github");
-
-      const imgItem = document.createElement("img");
-      imgItem.src = "https://www.svgrepo.com/show/295345/internet.svg";
-
-      divItem.appendChild(imgItem);
-      anchorItem.appendChild(divItem);
-      listItem.appendChild(anchorItem);
-      linksElement.appendChild(listItem);
-    }
-
-    if (e.playstore) {
-      const listItem = document.createElement("li");
-      const anchorItem = document.createElement("a");
-      anchorItem.href = e.playstore;
-      anchorItem.target = "_blank";
-      anchorItem.classList.add("github");
-
-      const divItem = document.createElement("div");
-      divItem.innerText = "Playstore";
-      divItem.classList.add("media__link");
-      divItem.classList.add("github");
-
-      const imgItem = document.createElement("img");
-      imgItem.src =
-        "https://iconape.com/wp-content/files/fa/64777/png/google-play-store.png";
-
-      divItem.appendChild(imgItem);
-      anchorItem.appendChild(divItem);
-      listItem.appendChild(anchorItem);
-      linksElement.appendChild(listItem);
-    }
-
-    const parentDiv = document.createElement("div");
-    parentDiv.classList.add("project");
-    parentDiv.appendChild(titleElement);
-    parentDiv.appendChild(stacksElement);
-    parentDiv.appendChild(descriptionElement);
-    parentDiv.appendChild(stackDescriptionElement);
-
-    if (e.github || e.web || e.playstore) parentDiv.appendChild(linksElement);
-
-    const listItem = document.createElement("li");
-    listItem.appendChild(parentDiv);
-
-    document.getElementById("personal__projects").appendChild(listItem);
-  });
+  projects.forEach((e) => projectParser(e, "neo-g__projects"));
 };
 
 window.onload = () => {
   personalProjectsHandler();
+  neo_g_ProjectsHandler();
 };

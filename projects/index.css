@@ -34,7 +34,6 @@
 .main li {
   margin: 0px;
   padding: 10px;
-  width: 100%;
 }
 
 .media__link {
@@ -124,4 +123,9 @@
 .project li {
   padding: 0px 5px;
   max-width: fit-content;
+}
+
+.neo-g {
+  padding: 20px;
+  padding-top: 0px;
 }
