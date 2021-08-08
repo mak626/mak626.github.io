@@ -1,0 +1,79 @@
+.profile-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding: 50px 100px;
+}
+
+.profile-image {
+  height: 20rem;
+  padding: 20px;
+  border-radius: 8%;
+}
+
+.designation {
+  background-color: var(--nav-color);
+  border: none;
+  border-radius: 6px;
+  height: fit-content;
+  padding: 5px 20px;
+}
+
+.designation h1 {
+  color: white;
+}
+
+#designation:after {
+  content: "";
+  color: var(--nav-color-dark);
+  animation: whatIAm 8s linear infinite;
+}
+
+@keyframes whatIAm {
+  0% {
+    color: var(--primary-color);
+    content: "Organizer";
+  }
+  30% {
+    content: "Automation Engineer";
+    color: var(--secondary-color);
+  }
+  60% {
+    content: "Software Engineer";
+    color: var(--primary-color);
+  }
+  100% {
+    content: "Full Stack Web Developer";
+    color: var(--secondary-color);
+  }
+}
+
+@media (max-width: 1000px) {
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0px;
+    padding: 50px 0px;
+  }
+
+  .designation {
+    width: 80%;
+    height: auto;
+  }
+
+  .designation h1 {
+    font-size: 1.2rem;
+    color: white;
+  }
+  .profile-image {
+    width: 80%;
+    height: auto;
+    margin: 0px;
+    margin-top: 40px;
+    padding: 0px;
+  }
+}

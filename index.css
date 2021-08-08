@@ -1,6 +1,8 @@
 @import "./styles/navbar.css";
 @import "./styles/stacks.css";
 @import "./styles/about-me.css";
+@import "./styles/profile.css";
+@import "./styles/footer.css";
 
 :root {
   font-family: Poppins;
@@ -41,27 +43,32 @@ b {
   color: var(--primary-color-dark);
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
 .main h2 {
   padding: 0px 20px;
+}
+.main {
+  padding-top: 80px;
 }
 
 @media (max-width: 1115px) {
   .main h2 {
     padding: 0px;
   }
-}
 
-.profile-info {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 50px 50px;
-}
-
-.profile-image {
-  margin-left: auto;
-  height: 22rem;
-  border-radius: 50%;
-  padding: 20px;
-  padding-right: 50px;
 }

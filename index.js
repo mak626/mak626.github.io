@@ -40,6 +40,10 @@ const stacksHandler = () => {
       name: "C++",
     },
     {
+      icon: "https://upload.wikimedia.org/wikipedia/fr/thumb/2/2e/Java_Logo.svg/800px-Java_Logo.svg.png",
+      name: "Java",
+    },
+    {
       icon: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Bash_Logo_Colored.svg",
       name: "Bash",
     },
@@ -84,7 +88,7 @@ const skillsHandler = () => {
       name: "Management",
     },
     {
-      icon: "https://image.flaticon.com/icons/png/512/2103/2103751.png",
+      icon: "https://image.flaticon.com/icons/png/512/2103/2103800.png",
       name: "Automation",
     },
     {
@@ -94,6 +98,10 @@ const skillsHandler = () => {
     {
       icon: "https://image.flaticon.com/icons/png/512/860/860472.png",
       name: "Leadership",
+    },
+    {
+      icon: "https://image.flaticon.com/icons/png/512/2643/2643368.png",
+      name: "Teaching",
     },
   ];
 

@@ -4,6 +4,7 @@ header {
 }
 
 .navbar {
+  position: fixed;
   display: flex;
   padding: 5px 0px;
   background-color: var(--nav-color);
@@ -13,8 +14,8 @@ header {
   font-size: 1.2rem;
   font-weight: 500;
   text-decoration: none;
-  /* box-shadow: 0 9px 6px -6px var(--nav-color); */
   min-height: 50px;
+  width: 100%;
   margin: auto;
 }
 
@@ -23,7 +24,7 @@ header {
   font-size: 1.5rem;
   font-weight: 700;
   margin-right: auto;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 .navbar-links a {
