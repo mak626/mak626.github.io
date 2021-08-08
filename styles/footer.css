@@ -1,3 +1,7 @@
+footer {
+  background-color: var(--nav-color);
+}
+
 .footer-link {
   position: relative;
 }
@@ -48,6 +52,14 @@
 .xda {
   background-color: #aa7605;
   color: white;
+}
+
+.footer__copyright {
+  margin: 0px;
+  font-weight: 500;
+  padding-bottom: 20px;
+  color: white;
+  text-align: center;
 }
 
 @media (max-width: 1115px) {
