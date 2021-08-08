@@ -195,7 +195,7 @@ const neo_g_ProjectsHandler = () => {
       stacks: "NodeJS",
       description: [`A NodeJS CLI for quiz with stored Score Board`],
       stack_description: [`Used NodeJS, chalk and read-sync libraries`],
-      github: "https://github.com/mak626/portfolio",
+      github: "https://github.com/mak626/mak626.github.io/",
       web: "../",
     },
     {
@@ -203,7 +203,7 @@ const neo_g_ProjectsHandler = () => {
       stacks: "NodeJS",
       description: [`A NodeJS CLI for quiz with stored Score Board`],
       stack_description: [`Used NodeJS, chalk and read-sync libraries`],
-      github: "https://github.com/mak626/portfolio",
+      github: "https://github.com/mak626/mak626.github.io/",
       web: "../blogs",
     },
     {
