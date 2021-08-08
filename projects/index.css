@@ -1,1 +1,129 @@
 @import "../index.css";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+  padding: 20px;
+  padding-top: 80px;
+}
+
+.main img {
+  width: 2rem;
+  padding: 5px;
+}
+
+.main h1 {
+  color: var(--primary-color-dark);
+}
+
+.main a {
+  text-decoration: none;
+}
+
+.main ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+}
+
+.main li {
+  margin: 0px;
+  padding: 10px;
+  width: 100%;
+}
+
+.projects__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.project {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px;
+  background-color: var(--nav-color);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.project h3 {
+  display: inline-block;
+  text-align: left;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  margin: 0%;
+}
+
+.project span {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin: 0%;
+}
+
+.project p {
+  margin: 5px 0px 0px;
+  font-size: 0.8rem;
+}
+
+.project ul {
+  flex-direction: row;
+  padding: 20px 0px;
+}
+
+.project li {
+  padding: 0px 5px;
+  max-width: fit-content;
+}
+
+.media__link {
+  padding: 10px;
+  margin: 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.media__link a {
+  display: inline-block;
+}
+
+.github {
+  background-color: white;
+  color: black;
+}
+
+.linkedin {
+  background-color: #0e76a8;
+  color: white;
+}
+
+.xda {
+  background-color: #aa7605;
+  color: white;
+}
+
+@media (max-width: 1115px) {
+  .main ul {
+    padding: 0px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .main li {
+    padding: 10px;
+  }
+}
