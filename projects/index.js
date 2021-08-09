@@ -233,6 +233,17 @@ const neo_g_ProjectsHandler = () => {
       github: "https://github.com/mak626/emoji-interpreter",
       web: "https://2mm8w.csb.app/",
     },
+    {
+      title: "MARK 9 : Book Recommentation App",
+      stacks: "ReactJS",
+      description: [
+        `Shows list of my favourite books.`,
+        `Can filter through genres.`,
+      ],
+      stack_description: [`Used React JS`],
+      github: "https://github.com/mak626/book-recommentation-app",
+      web: "https://mak626.github.io/book-recommentation-app/",
+    },
   ];
 
   projects.forEach((e) => projectParser(e, "neo-g__projects"));
