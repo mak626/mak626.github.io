@@ -244,6 +244,16 @@ const neo_g_ProjectsHandler = () => {
       github: "https://github.com/mak626/book-recommentation-app",
       web: "https://mak626.github.io/book-recommentation-app/",
     },
+    {
+      title: "MARK 11 : Is Your Birthday Lucky?",
+      stacks: "HTML | CSS | JS",
+      description: [
+        `Checks if sum of digits of birthday is divisible by the lucky number`,
+      ],
+      stack_description: [`Used HTML, CSS, JS`],
+      github: "https://github.com/mak626/is-your-birthday-lucky",
+      web: "https://mak626.github.io/is-your-birthday-lucky/",
+    },
   ];
 
   projects.forEach((e) => projectParser(e, "neo-g__projects"));
