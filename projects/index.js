@@ -254,6 +254,16 @@ const neo_g_ProjectsHandler = () => {
       github: "https://github.com/mak626/is-your-birthday-lucky",
       web: "https://mak626.github.io/is-your-birthday-lucky/",
     },
+    {
+      title: "MARK 13 : Birthday Palindrome",
+      stacks: "HTML | CSS | JS",
+      description: [
+        `Checks whether your birthdate is palindrome in dd-mm-yyyy, mm-dd-yyyy, mm-dd-yy formats`,
+      ],
+      stack_description: [`Used HTML, CSS, JS`],
+      github: "https://github.com/mak626/birthday-pallindrome",
+      web: "https://mak626.github.io/birthday-pallindrome/",
+    },
   ];
 
   projects.forEach((e) => projectParser(e, "neo-g__projects"));
