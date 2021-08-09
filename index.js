@@ -20,6 +20,10 @@ const stacksHandler = () => {
       name: "Puppeteer",
     },
     {
+      icon: "https://firebase.google.com/downloads/brand-guidelines/SVG/logo-logomark.svg",
+      name: "Firebase",
+    },
+    {
       icon: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
       name: "HTML",
     },
