@@ -274,6 +274,14 @@ const neo_g_ProjectsHandler = () => {
       github: "https://github.com/mak626/birthday-pallindrome",
       web: "https://mak626.github.io/birthday-pallindrome/",
     },
+    {
+      title: "MARK 14 : Stock Check",
+      stacks: "ReactJS",
+      description: [`A Stock Profit/Loss Checking app`],
+      stack_description: [`Used ReactJS`],
+      github: "https://github.com/mak626/stock-check",
+      web: "http://mak626.github.io/stock-check",
+    },
   ];
 
   projects.forEach((e) => projectParser(e, "neo-g__projects"));
