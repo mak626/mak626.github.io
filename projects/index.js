@@ -245,7 +245,17 @@ const neo_g_ProjectsHandler = () => {
       web: "https://mak626.github.io/book-recommentation-app/",
     },
     {
-      title: "MARK 11 : Is Your Birthday Lucky?",
+      title: "MARK 10 : Cash Register",
+      stacks: "HTML | CSS | JS",
+      description: [
+        `Help the user by telling how can he/she return the change to the customer with minimum number of notes`,
+      ],
+      stack_description: [`Used HTML, CSS, JS`],
+      github: "https://github.com/mak626/cash-register",
+      web: "https://mak626.github.io/cash-register/",
+    },
+    {
+      title: "MARK 11 : Is Your Birthday Lucky",
       stacks: "HTML | CSS | JS",
       description: [
         `Checks if sum of digits of birthday is divisible by the lucky number`,
