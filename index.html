@@ -1,142 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M Aswin Kishore</title>
+    <link href="./index.css" rel="stylesheet" />
+    <link href="./assets/mak2.png" rel="icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./assets/stacks.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>M Aswin Kishore</title>
-  <link href="./index.css" rel="stylesheet" />
-  <link href="./assets/mak2.png" rel="icon" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <script src="./assets/stacks.js"></script>
-</head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
 
-<body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-
-  <!-- NAV BAR -->
-  <header>
-    <nav class="navbar">
-      <div class="navbar-title">M Aswin Kishore</div>
-      <a href="#" class="navbar-menu" id="navbar-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      <div class="navbar-links">
-        <ul>
-          <li><a class="active" href="#">About Me</a></li>
-          <li>
-            <a href="./projects/index.html">Projects</a>
-          </li>
-          <li>
+    <!-- NAV BAR -->
+    <header>
+      <nav class="navbar">
+        <div class="navbar-title">M Aswin Kishore</div>
+        <a href="#" class="navbar-menu" id="navbar-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a class="active" href="#">About Me</a></li>
+            <li>
+              <a href="./projects/index.html">Projects</a>
+            </li>
+            <!-- <li>
             <a href="./blogs/index.html">Blogs</a>
+          </li> -->
+            <li>
+              <a href="mailto:mak26.work@gmail.com?subject=Portfolio">
+                <button class="contact-me-button">Contact Me</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- /NAV BAR -->
+
+    <div class="main">
+      <!-- PROFILE INFO -->
+      <div class="profile-info">
+        <div class="designation">
+          <h1>I am a <span id="designation"></span></h1>
+        </div>
+        <img
+          class="profile-image"
+          src="./assets/profile.png"
+          alt="profile-image"
+        />
+      </div>
+      <!-- /PROFILE INFO -->
+
+      <!-- ABOUT ME -->
+      <div class="about-me">
+        <h2>More About Me</h2>
+        <ul>
+          <li>
+            A <b>community-driven</b> programmer who uses <b>automation</b> to
+            solve common day-to-day problems.
           </li>
           <li>
-            <a href="mailto:mak26.work@gmail.com?subject=Portfolio">
-              <button class="contact-me-button">Contact Me</button>
+            Uses <b>NodeJS framework</b> for server-side applications and python
+            for scripting and automation
+          </li>
+          <li>Uses Selenium/Puppeteer for <b>web scraping</b></li>
+          <li>
+            Proficient in <b>problem-solving</b> and have a great imagination
+          </li>
+          <li>
+            Ability to comprehend new languages/frameworks within a short period
+            of time
+          </li>
+          <li>
+            Love keeping all things <b>organized</b> using Google Apps Scripts
+            for automating Google forms responses and auto sorting the google
+            sheets.
+          </li>
+        </ul>
+      </div>
+      <!-- /ABOUT ME -->
+
+      <!-- STACKS -->
+      <div class="stacks">
+        <h2>My Tools & Technologies</h2>
+        <ul id="stacks-data"></ul>
+      </div>
+      <!-- /STACKS -->
+
+      <!-- STACKS SKILLS -->
+      <div class="stacks skills">
+        <h2>My Skills</h2>
+        <ul id="skills-data"></ul>
+      </div>
+      <!-- /STACKS SKILLS -->
+    </div>
+
+    <!-- Bottom BAR -->
+    <footer>
+      <div class="navbar footer-link">
+        <ul>
+          <li>
+            <a href="https://github.com/mak626" target="_blank" class="github">
+              <div class="media__link github">
+                <img
+                  src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                />
+                Github
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/maswinkishore/"
+              target="_blank"
+              class="linkedin"
+            >
+              <div class="media__link linkedin">
+                <img src="./assets/linkedIN.svg" />
+                LinkedIn
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://forum.xda-developers.com/m/mak626.5875057/"
+              target="_blank"
+              class="xda"
+            >
+              <div class="media__link xda">
+                <img src="./assets/xda.svg" />XDA Developers
+              </div>
             </a>
           </li>
         </ul>
       </div>
-    </nav>
-  </header>
-  <!-- /NAV BAR -->
 
-  <div class="main">
-    <!-- PROFILE INFO -->
-    <div class="profile-info">
-      <div class="designation">
-        <h1>I am a <span id="designation"></span></h1>
-      </div>
-      <img class="profile-image" src="./assets/profile.png" alt="profile-image" />
-    </div>
-    <!-- /PROFILE INFO -->
+      <h5 class="footer__copyright">© 2021 | M Aswin Kishore</h5>
+    </footer>
+    <!-- /Bottom BAR -->
 
-    <!-- ABOUT ME -->
-    <div class="about-me">
-      <h2>More About Me</h2>
-      <ul>
-        <li>
-          A <b>community-driven</b> programmer who uses <b>automation</b> to
-          solve common day-to-day problems.
-        </li>
-        <li>
-          Uses <b>NodeJS framework</b> for server-side applications and python
-          for scripting and automation
-        </li>
-        <li>Uses Selenium/Puppeteer for <b>web scraping</b></li>
-        <li>
-          Proficient in <b>problem-solving</b> and have a great imagination
-        </li>
-        <li>
-          Ability to comprehend new languages/frameworks within a short period
-          of time
-        </li>
-        <li>
-          Love keeping all things <b>organized</b> using Google Apps Scripts
-          for automating Google forms responses and auto sorting the google
-          sheets.
-        </li>
-      </ul>
-    </div>
-    <!-- /ABOUT ME -->
-
-    <!-- STACKS -->
-    <div class="stacks">
-      <h2>My Tools & Technologies</h2>
-      <ul id="stacks-data"></ul>
-    </div>
-    <!-- /STACKS -->
-
-    <!-- STACKS SKILLS -->
-    <div class="stacks skills">
-      <h2>My Skills</h2>
-      <ul id="skills-data"></ul>
-    </div>
-    <!-- /STACKS SKILLS -->
-  </div>
-
-  <!-- Bottom BAR -->
-  <footer>
-    <div class="navbar footer-link">
-      <ul>
-        <li>
-          <a href="https://github.com/mak626" target="_blank" class="github">
-            <div class="media__link github">
-              <img src="https://image.flaticon.com/icons/png/512/25/25231.png" />
-              Github
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/maswinkishore/" target="_blank" class="linkedin">
-            <div class="media__link linkedin">
-              <img src="./assets/linkedIN.svg" />
-              LinkedIn
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://forum.xda-developers.com/m/mak626.5875057/" target="_blank" class="xda">
-            <div class="media__link xda">
-              <img src="./assets/xda.svg" />XDA Developers
-            </div>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <h5 class="footer__copyright">© 2021 | M Aswin Kishore</h5>
-  </footer>
-  <!-- /Bottom BAR -->
-
-  <script src="./index.js"></script>
-</body>
-
+    <script src="./index.js"></script>
+  </body>
 </html>
