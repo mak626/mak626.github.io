@@ -265,6 +265,14 @@ const neo_g_ProjectsHandler = () => {
       web: "https://mak626.github.io/is-your-birthday-lucky/",
     },
     {
+      title: "MARK 12 : Fun With Traingles",
+      stacks: "HTML | CSS | JS",
+      description: [`App to calculate basic operations of a traingle`],
+      stack_description: [`Used HTML, CSS, JS`],
+      github: "https://github.com/mak626/fun-with-triangles",
+      web: "https://mak626.github.io/fun-with-triangles/",
+    },
+    {
       title: "MARK 13 : Birthday Palindrome",
       stacks: "HTML | CSS | JS",
       description: [
