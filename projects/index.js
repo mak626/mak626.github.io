@@ -192,17 +192,17 @@ const neo_g_ProjectsHandler = () => {
     },
     {
       title: "MARK 4 : PortFolio",
-      stacks: "NodeJS",
-      description: [`A NodeJS CLI for quiz with stored Score Board`],
-      stack_description: [`Used NodeJS, chalk and read-sync libraries`],
+      stacks: "HTML | CSS | JS",
+      description: [`Made my own Portfolio`],
+      stack_description: [`Used HTML, CSS, JS`],
       github: "https://github.com/mak626/mak626.github.io/",
       web: "../",
     },
     {
       title: "MARK 5 : PortFolio Blogs",
-      stacks: "NodeJS",
-      description: [`A NodeJS CLI for quiz with stored Score Board`],
-      stack_description: [`Used NodeJS, chalk and read-sync libraries`],
+      stacks: "HTML | CSS | JS",
+      description: [`Added some blogs for my portfolio`],
+      stack_description: [`Used HTML, CSS, JS`],
       github: "https://github.com/mak626/mak626.github.io/",
       web: "../blogs",
     },
@@ -289,6 +289,14 @@ const neo_g_ProjectsHandler = () => {
       stack_description: [`Used ReactJS`],
       github: "https://github.com/mak626/stock-check",
       web: "http://mak626.github.io/stock-check",
+    },
+    {
+      title: "MARK 15 : PortFolio Blogs",
+      stacks: "HTML | CSS | JS",
+      description: [`Completed blogs for my portfolio`],
+      stack_description: [`Used HTML, CSS, JS`],
+      github: "https://github.com/mak626/mak626.github.io/",
+      web: "../blogs",
     },
   ];
 
