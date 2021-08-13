@@ -12,13 +12,14 @@ const projectParser = (project, ulID) => {
   titleElement.innerText = project.title;
 
   const stacksElement = document.createElement("span");
-  stacksElement.innerHTML = project.overview;
+  stacksElement.innerHTML = project.posted;
 
   titleElement.appendChild(stacksElement);
 
   const descriptionElement = document.createElement("p");
   descriptionElement.classList.add("info");
-  descriptionElement.innerText = project.description.join(" ");
+  descriptionElement.innerText =
+    project.description.join(" ").slice(0, 350) + " ...";
 
   const linksElement = document.createElement("ul");
   linksElement.classList.add("links");
@@ -63,18 +64,18 @@ const blogsHandler = () => {
   const projects = [
     {
       title: "Getting Started With VS Code",
-      overview:
-        "An overview of the world's best code editor and tips & tricks on how to use it.",
+      posted: "12-08-2021 | 10min read",
       description: [
+        `An overview of the world's best code editor and tips & tricks on how to use it.`,
         `Visual Studio Code is a source-code editor made by Microsoft for Windows, Linux, and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. Users can change the theme, keyboard shortcuts, preferences, and install extensions that add additional functionality.`,
       ],
       web: "https://mak626.notion.site/Getting-Started-With-VS-Code-a6592d55ad24459485b5d8dcffc28d66",
     },
     {
       title: "Power Of Console Logging",
-      overview:
-        "A simple yet one of the most vital tools to efficient debugging",
+      posted: "12-08-2021 | 6min read",
       description: [
+        `A simple yet one of the most vital tools to efficient debugging. The console.log() is a method in JavaScript which outputs a message to the web console.`,
         `The console.log() is a method in JavaScript which outputs a message to the web console. The message may be a single string (with optional substitution values), or it may be anyone or more JavaScript objects.`,
       ],
       web: "https://mak626.notion.site/mak626/Power-Of-Console-Logging-48c861f838a04b5d99cf50799e47733a",
