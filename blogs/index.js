@@ -12,7 +12,7 @@ const projectParser = (project, ulID) => {
   titleElement.innerText = project.title;
 
   const stacksElement = document.createElement("span");
-  stacksElement.innerHTML = `📅${project.posted} 🕔${project.readTime}`;
+  stacksElement.innerHTML = `${project.posted} 🕔${project.readTime}`;
 
   titleElement.appendChild(stacksElement);
 
@@ -65,7 +65,7 @@ const blogsHandler = () => {
     {
       title: "Getting Started With VS Code",
       posted: "12-08-2021",
-      readTime: "10min",
+      readTime: "10mins",
       description: [
         `An overview of the world's best code editor and tips & tricks on how to use it.`,
         `Visual Studio Code is a source-code editor made by Microsoft for Windows, Linux, and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. Users can change the theme, keyboard shortcuts, preferences, and install extensions that add additional functionality.`,
@@ -75,7 +75,7 @@ const blogsHandler = () => {
     {
       title: "Power Of Console Logging",
       posted: "12-08-2021",
-      readTime: "6min",
+      readTime: "6mins",
       description: [
         `A simple yet one of the most vital tools to efficient debugging. The console.log() is a method in JavaScript which outputs a message to the web console.`,
         `The console.log() is a method in JavaScript which outputs a message to the web console. The message may be a single string (with optional substitution values), or it may be anyone or more JavaScript objects.`,
