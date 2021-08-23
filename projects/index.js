@@ -136,7 +136,7 @@ const personalProjectsHandler = () => {
       stack_description: [
         `Uses NodeJS at backend and firebase for storing server member details and Heroku for deployment.`,
       ],
-      github: "https://github.com/dscmbcet/oogway-public",
+      github: "https://github.com/dscmbcet/oogway",
     },
     {
       title: "VS Code Java Installer",
