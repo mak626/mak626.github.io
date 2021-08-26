@@ -54,6 +54,11 @@ footer {
   color: white;
 }
 
+.twitter {
+  background-color: #2aa9e0;
+  color: white;
+}
+
 .footer__copyright {
   margin: 0px;
   font-weight: 500;
