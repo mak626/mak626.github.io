@@ -84,27 +84,27 @@ const stacksHandler = () => {
 const skillsHandler = () => {
   const skills = [
     {
-      icon: "https://image.flaticon.com/icons/png/512/839/839608.png",
+      icon: "./assets/skills/organization.png",
       name: "Organization",
     },
     {
-      icon: "https://image.flaticon.com/icons/png/512/2139/2139551.png",
+      icon: "./assets/skills/management.png",
       name: "Management",
     },
     {
-      icon: "https://image.flaticon.com/icons/png/512/2103/2103800.png",
+      icon: "./assets/skills/automation.png",
       name: "Automation",
     },
     {
-      icon: "https://image.flaticon.com/icons/png/512/1150/1150626.png",
+      icon: "./assets/skills/web.png",
       name: "Web Scraping",
     },
     {
-      icon: "https://image.flaticon.com/icons/png/512/860/860472.png",
+      icon: "./assets/skills/leadership.png",
       name: "Leadership",
     },
     {
-      icon: "https://image.flaticon.com/icons/png/512/2643/2643368.png",
+      icon: "./assets/skills/teaching.png",
       name: "Teaching",
     },
   ];
