@@ -38,7 +38,7 @@ const projectParser = (project, ulID) => {
 
     const imgItem = document.createElement("img");
     imgItem.src =
-      "https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/notion.svg";
+      "https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg";
 
     divItem.appendChild(imgItem);
     anchorItem.appendChild(divItem);

@@ -40,7 +40,8 @@ const projectParser = (project, ulID) => {
     divItem.classList.add("github");
 
     const imgItem = document.createElement("img");
-    imgItem.src = "https://image.flaticon.com/icons/png/512/25/25231.png";
+    imgItem.src =
+      "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg";
 
     divItem.appendChild(imgItem);
     anchorItem.appendChild(divItem);
